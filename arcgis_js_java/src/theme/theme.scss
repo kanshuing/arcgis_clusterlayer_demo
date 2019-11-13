@@ -1,0 +1,13 @@
+@import "themePacks/default-theme-manager";
+@import "themePacks/green-theme-manager";
+@import "themePacks/darkblue-theme-manager";
+@import "themePacks/dark-theme-manager";
+@import "themePacks/purple-theme-manager";
+
+$themes: (
+  default-theme: $default-theme,
+  green-theme: $green-theme,
+  darkblue-theme: $darkblue-theme,
+  dark-theme: $dark-theme,
+  purple-theme: $purple-theme
+);

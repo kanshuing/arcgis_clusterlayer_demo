@@ -1,0 +1,242 @@
+@import "theme";
+
+//公共——系统左侧菜单背景——主题颜色background
+@mixin color-background() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      background: map-get($map: $theme, $key: color-fm-theme);
+    }
+  }
+}
+
+//公共——系统左侧菜单背景颜色——主题颜色background-color
+@mixin color-background-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      background-color: map-get($map: $theme, $key: transparentize);
+    }
+  }
+}
+
+//公共——主题颜色color
+@mixin color-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      color: map-get($map: $theme, $key: color-main-tool);
+    }
+  }
+}
+
+//公共——勾选框边框颜色
+@mixin color-border-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      border-color: map-get($map: $theme, $key: color-main-tool);
+    }
+  }
+}
+//公共——勾选背景颜色
+@mixin color-checked-background-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      background-color: map-get($map: $theme, $key: color-main-tool);
+    }
+  }
+}
+
+//权限——el-tooltip小三角颜色（左侧）
+@mixin color-border-left-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      border-left-color: map-get($map: $theme, $key: color-fm-theme);
+    }
+  }
+}
+
+//权限——el-tooltip小三角颜色（右侧）
+@mixin color-border-right-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      border-right-color: map-get($map: $theme, $key: color-fm-theme);
+    }
+  }
+}
+
+//权限——el-tooltip小三角颜色（顶部）
+@mixin color-border-top-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      border-top-color: map-get($map: $theme, $key: color-fm-theme);
+    }
+  }
+}
+
+//权限——el-tooltip小三角颜色（底部）
+@mixin color-border-bottom-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      border-bottom-color: map-get($map: $theme, $key: color-fm-theme);
+    }
+  }
+}
+
+//公共——列表排序小三角按钮颜色（正序）
+@mixin color-table-border-top-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      border-top-color: map-get($map: $theme, $key: color-main-tool);
+    }
+  }
+}
+
+//公共——列表排序小三角按钮颜色（倒序）
+@mixin color-table-border-bottom-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      border-bottom-color: map-get($map: $theme, $key: color-main-tool);
+    }
+  }
+}
+
+//公共——系统标题颜色
+@mixin color-title-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      color: map-get($map: $theme, $key: color-da-title);
+    }
+  }
+}
+
+//公共——右侧顶部background-color
+@mixin color-header-background-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      background-color: map-get($map: $theme, $key: color-header);
+    }
+  }
+}
+
+//公共——右侧底部background-color
+@mixin color-bottom-background-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      background-color: map-get($map: $theme, $key: color-bottom);
+    }
+  }
+}
+
+//公共——主要按钮中字体颜色color
+@mixin color-button-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      color: map-get($map: $theme, $key: color-fm-theme-button-color);
+    }
+  }
+}
+
+//公共——文字形式按钮颜色（列表中的操作文字按钮及当前页码颜色）
+@mixin color-text-button-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      color: map-get($map: $theme, $key: color-fm-theme-text-button);
+    }
+  }
+}
+
+//公共——主要按钮的背景颜色background-color
+@mixin color-button-background-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      background-color: map-get($map: $theme, $key: color-fm-theme-button);
+    }
+  }
+}
+
+//公共——鼠标悬停时 主要按钮的背景颜色background-color
+@mixin color-button-background-color-hover() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      background-color: map-get($map: $theme, $key: color-fm-theme-button-hover);
+    }
+  }
+}
+
+//公共——鼠标悬停时 取消按钮的背景颜色background-color
+@mixin color-cancel-button-background-color-hover() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      background-color: map-get($map: $theme, $key: color-fm-theme-cancel-button-hover);
+    }
+  }
+}
+
+//公共——禁用时 主要按钮的背景颜色background-color
+@mixin color-button-background-color-disabled() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      background-color: map-get($map: $theme, $key: color-fm-theme-button-disable);
+    }
+  }
+}
+
+//公共——主要按钮的边框颜色border-color
+@mixin color-button-border-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      border-color: map-get($map: $theme, $key: color-fm-theme-button);
+    }
+  }
+}
+
+//公共——鼠标悬停时 主要按钮的边框颜色border-color
+@mixin color-button-border-color-hover() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      border-color: map-get($map: $theme, $key: color-fm-theme-button-hover);
+    }
+  }
+}
+
+//公共——禁用时 主要按钮的边框颜色border-color
+@mixin color-button-border-color-disabled() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      border-color: map-get($map: $theme, $key: color-fm-theme-button-disable);
+    }
+  }
+}
+
+//公共——tag标签边框颜色border-color
+@mixin color-tag-border-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      border-color: map-get($map: $theme, $key: color-tag-border-color);
+    }
+  }
+}
+//公共——tag标签背景颜色background-color
+@mixin color-tag-background-color() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      background-color: map-get($map: $theme, $key: color-tag-background-color);
+    }
+  }
+}
+
+//公共——左侧菜单背景图片
+@mixin image-aside-background-image() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      background-image: map-get($map: $theme, $key: image-aside-background);
+    }
+  }
+}
+
+//公共——默认用户图片（可能会被具体图片替换）
+@mixin image-header-user-background() {
+  @each $themename, $theme in $themes {
+    [data-theme="#{$themename}"] & {
+      background: map-get($map: $theme, $key: image-header-user);
+    }
+  }
+}

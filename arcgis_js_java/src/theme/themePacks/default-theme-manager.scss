@@ -1,0 +1,20 @@
+$default-theme:(
+color-fm-theme: #0070CC,
+//主要工具显示颜色
+color-main-tool: rgba(24,144,255,1),
+color-fm-theme-button: #1890FF,
+color-fm-theme-button-disable: rgba(24,144,255,0.3),
+color-fm-theme-cancel-button-hover: rgba(24,144,255,0.1),
+color-fm-theme-button-hover: rgba(24,144,255,0.8),
+color-fm-theme-button-color: white,
+color-fm-theme-text-button: #1890FF,
+//标签边框颜色
+color-tag-border-color: rgba(24,144,255,0.2),
+color-tag-background-color: rgba(24,144,255,0.1),
+
+color-da-title: #FFFFFF,
+color-header: #FFFFFF,
+color-bottom: #FFFFFF,
+image-aside-background: url("/static/image/fileManager/er-ball.png"),
+image-header-user: url("/static/image/fileManager/user-default.png"),
+);

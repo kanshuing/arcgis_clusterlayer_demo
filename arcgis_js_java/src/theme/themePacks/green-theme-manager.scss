@@ -1,0 +1,19 @@
+$green-theme: (
+  //侧边栏的颜色
+    color-fm-theme: #026aa3,
+  //主要工具显示颜色
+    color-main-tool: rgba(9, 150, 136, 1),
+  color-fm-theme-button: #099688,
+  color-fm-theme-button-disable: rgba(9, 150, 136, 0.3),
+  color-fm-theme-cancel-button-hover: rgba(9, 150, 136, 0.1),
+  color-fm-theme-button-hover: rgba(9, 150, 136, 0.8),
+  color-fm-theme-button-color: white,
+  color-fm-theme-text-button: #099688,
+  // 标签边框颜色 color-tag-border-color: rgba(9, 150, 136, 0.2),
+  color-tag-background-color: rgba(9, 150, 136, 0.1),
+  color-da-title: #ffffff,
+  color-header: #ffffff,
+  color-bottom: #ffffff,
+  image-aside-background: url("/static/image/bone/layout/banner bg.png"),
+  image-header-user: url("/static/image/fileManager/user-green.png")
+);

@@ -1,0 +1,28 @@
+$dark-theme:(
+//公共——主题主体颜色，主要是左侧系统标题及左侧菜单的背景颜色
+color-fm-theme: #333333,
+//主要工具显示颜色
+color-main-tool: rgba(102,187,255,1),
+//公共——主要按钮颜色
+color-fm-theme-button: rgba(102,187,255,1),
+color-fm-theme-button-disable: rgba(102,187,255,0.3),
+color-fm-theme-cancel-button-hover: rgba(102,187,255,0.1),
+color-fm-theme-button-hover: rgba(102,187,255,0.8),
+color-fm-theme-button-color: white,
+//文档——文字按钮颜色（列表中的操作文字按钮及当前页码颜色）
+color-fm-theme-text-button: rgba(102,187,255,1),
+//标签边框颜色
+color-tag-border-color: rgba(102,187,255,0.2),
+color-tag-background-color: rgba(102,187,255,0.1),
+
+//公共——系统标题字体颜色
+color-da-title: #FFFFFF,
+//公共——左侧头部背景颜色
+color-header: #FFFFFF,
+//公共——左侧底部背景颜色
+color-bottom: #FFFFFF,
+//公共——左侧背景图片
+image-aside-background: url("/static/image/fileManager/er-ball.png"),
+//公共——用户默认图片（可能会修改为其他默认图片）
+image-header-user: url("/static/image/fileManager/user-dark.png"),
+);

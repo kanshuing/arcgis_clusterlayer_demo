@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html style="overflow: hidden;">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>learn means die</title>
+    <!--
+    	描述：修改图标
+    -->
+    <link rel="icon" href="/static/image/login/browser-logo.png" type="image/x-ico" />
+  </head>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0 auto;
+    }
+    /**
+		 * infowindow的样式修改
+		 */
+    .esriPopup .titlePane {
+      background-color: #ffffff !important;
+      height: 28px;
+    }
+    /**
+		 * infowindow与iframe的内边距调整
+		 */
+    .contentPane {
+      padding: 0px !important;
+      overflow-y: hidden !important;
+      width: 100%;
+    }
+    /**
+		 * 修改关闭按钮颜色
+		 */
+    .esriPopup .titleButton.close {
+      background: url(/static/image/map/close.png) !important;
+      background-size: cover !important;
+      width: 17px !important;
+      top: 5px;
+      right: 5px !important;
+    }
+    /**
+		 * 将缩放到隐藏
+		 */
+    .esriPopup .actionsPane .actionList {
+      display: none;
+    }
+    .LayerSwipe .horizontal,
+    .LayerSwipe .horizontal .handle {
+      background-color: #e21c1c !important;
+    }
+  </style>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
