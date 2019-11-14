@@ -21,24 +21,10 @@ spring:
   application:
     name: codein
   datasource:
-#    driver-class-name: oracle.jdbc.driver.OracleDriver
-#    url: jdbc:oracle:thin:@10.34.69.61:1521:orcl
-#    username: zhongxin
-#    password: 123456
     driver-class-name: oracle.jdbc.driver.OracleDriver
     url: jdbc:oracle:thin:@10.10.50.198:1521:orcl
     username: DGCACYYZT
     password: DGCACYYZT
-#    开发
-#    driver-class-name: org.postgresql.Driver
-#    url: jdbc:postgresql://10.10.50.198:5432/bjwlc?currentSchema=business
-#    username: product
-#    password: product123456
-#    编译
-#    driver-class-name: org.postgresql.Driver
-#    url: jdbc:postgresql://10.10.60.91:5432/bjwlc?currentSchema=business
-#    username: postgres
-#    password: postgres
     druid:
       initialSize: 5
       minIdle: 5
