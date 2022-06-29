@@ -59,7 +59,7 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
-            <version>3.17</version>
+            <version>4.1.1</version>
         </dependency>
         <!--添加JSON辅助处理支持https://blog.csdn.net/u011054333/article/details/80504154 -->
         <dependency>
